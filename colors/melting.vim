@@ -2,29 +2,40 @@ if !has('gui_running') && &t_Co < 256
   finish
 endif
 
-let s:n_black   = "#1d1e26"
-let s:n_red     = "#bf5c80"
-let s:n_green   = "#6aa28c"
-let s:n_yellow  = "#c2bc85"
-let s:n_blue    = "#84a0c6"
-let s:n_magenta = "#a093c7"
-let s:n_cyan    = "#89b8c2"
-let s:n_white   = "#c6c8d1"
+set background=dark
+hi clear
 
-let s:b_black   = "#6b7089"
-let s:b_red     = "#f2779b"
-let s:b_green   = "#88cea2"
-let s:b_yellow  = "#dcde92"
-let s:b_blue    = "#a9bbd5"
-let s:b_magenta = "#c6b9db"
-let s:b_cyan    = "#9be1d0"
-let s:b_white   = "#e1e2e8"
+if exists('syntax_on')
+  syntax reset
+endif
 
-let s:search    = "#92E7D3"
+let g:colors_name = 'melting'
 
 
+" Colors
+let s:background = "#14171E"
+let s:foreground = "#C6C8D1"
 
-"Terminal colors
+let s:n_black    = "#1D1E26"
+let s:n_red      = "#BF5C80"
+let s:n_green    = "#6AA28C"
+let s:n_yellow   = "#C2BC85"
+let s:n_blue     = "#84A0C6"
+let s:n_magenta  = "#A093C7"
+let s:n_cyan     = "#89B8C2"
+let s:n_white    = "#C6C8D1"
+
+let s:b_black    = "#6B7089"
+let s:b_red      = "#F2779B"
+let s:b_green    = "#88CEA2"
+let s:b_yellow   = "#DCDE92"
+let s:b_blue     = "#A9BBD5"
+let s:b_magenta  = "#C6B9DB"
+let s:b_cyan     = "#9BE1D0"
+let s:b_white    = "#E1E2E8"
+
+
+" Terminal colors
 if has('nvim')
   let g:terminal_color_0  = s:n_black
   let g:terminal_color_1  = s:n_red
@@ -49,3 +60,64 @@ else
         \ s:b_black, s:b_red, s:b_green, s:b_yellow, s:b_blue, s:b_magenta, s:b_cyan, s:b_white,
         \ ]
 endif
+
+
+" highlights
+call melting#highlight('Cursor',             { 'fg': s:n_black, 'bg': s:b_white })
+call melting#highlight('CursorLine',         { 'bg': s:n_black                  })
+call melting#highlight("ColorColumn",        { 'bg': s:n_black                  })
+call melting#highlight('CursorColumn',       { 'bg': s:n_black                  })
+
+call melting#highlight('Normal',             { 'fg': s:foreground, 'bg': s:background})
+call melting#highlight('Comment',            { 'fg': s:b_black, 'mode': 'italic'})
+call melting#highlight('Statement',          { 'fg': s:n_magenta} )
+call melting#highlight('Function',           { 'fg': s:n_magenta} )
+call melting#highlight('Identifier',         { 'fg': s:b_blue} )
+
+call melting#highlight('Type',               { 'fg': s:b_cyan} )
+call melting#highlight('Constant',           { 'fg': s:b_yellow} )
+call melting#highlight('String',             { 'fg': s:b_yellow} )
+call melting#highlight('Operator',           { 'fg': s:b_yellow} )
+
+call melting#highlight('PreProc',            { 'fg': s:n_red} )
+call melting#highlight('Include',            { 'fg': s:n_red} )
+
+call melting#highlight('Delimiter',          { 'fg': s:n_green} )
+call melting#highlight('Title',              { 'fg': s:n_cyan} )
+call melting#highlight('Underlined',         { 'fg': s:b_red} )
+call melting#highlight('NonText',            { 'fg': s:n_magenta} )
+call melting#highlight('Ignore',             { 'fg': s:n_white} )
+call melting#highlight('Todo',               { 'fg': s:b_cyan, 'bg': s:b_black} )
+
+call melting#highlight('Search',             { 'fg': s:n_black, 'bg': s:b_cyan } )
+call melting#highlight('IncSearch',          { 'fg': s:n_black, 'bg': s:b_yellow } )
+
+call melting#highlight('Special',            { 'fg': s:n_yellow} )
+call melting#highlight('Visual',             { 'fg': s:b_white,    'bg': "#3D4252"    } )
+call melting#highlight('MatchParen',         { 'fg': s:b_cyan,    'bg': s:b_black    } )
+
+call melting#highlight('Folded',             { 'fg': s:b_magenta,   'bg': s:b_black       } )
+
+call melting#highlight('Pmenu',              { 'fg': s:b_white,    'bg': "#212831"      } )
+call melting#highlight('PmenuSel',           { 'fg': s:n_black,    'bg': s:b_blue       } )
+call melting#highlight('PmenuSbar',          { 'bg': s:n_black       } )
+call melting#highlight('PmenuThumb',         { 'bg': s:b_blue      } )
+
+call melting#highlight('SignColumn',         { 'bg': s:n_black      } )
+
+call melting#highlight('LineNr',             { 'fg': s:b_black, 'bg': s:n_black} )
+call melting#highlight('CursorLineNr',       { 'fg': s:n_white, 'bg': s:n_black} )
+call melting#highlight('VertSplit',          { 'bg': "#2C2E3A"} )
+
+call melting#highlight('Directory',          { 'fg': s:b_blue} )
+
+call melting#highlight('Error',              { 'fg': s:n_red})
+call melting#highlight('ErrorMsg',           { 'fg': s:n_red})
+call melting#highlight('WarningMsg',         { 'fg': s:n_yellow})
+call melting#highlight('Whitespace',         { 'fg': s:n_magenta})
+
+call melting#highlight("DiffAdd",            { 'fg': s:n_green , 'bg': s:n_black})
+call melting#highlight("DiffChange",         { 'fg': s:n_yellow, 'bg': s:n_black})
+call melting#highlight("DiffDelete",         { 'fg': s:n_red   , 'bg': s:n_black})
+call melting#highlight("DiffText",           { 'fg': s:n_blue  , 'bg': s:n_black})
+
