@@ -62,7 +62,7 @@ else
 endif
 
 
-" highlights
+" Highlights
 call melting#highlight('Cursor',             { 'fg': s:n_black, 'bg': s:b_white })
 call melting#highlight('CursorLine',         { 'bg': s:n_black                  })
 call melting#highlight("ColorColumn",        { 'bg': s:n_black                  })
@@ -121,3 +121,26 @@ call melting#highlight("DiffChange",         { 'fg': s:n_yellow, 'bg': s:n_black
 call melting#highlight("DiffDelete",         { 'fg': s:n_red   , 'bg': s:n_black})
 call melting#highlight("DiffText",           { 'fg': s:n_blue  , 'bg': s:n_black})
 
+
+" Filetypes
+
+" Shell scripts
+call melting#highlight('zshDeref',           { 'fg': s:n_red   })
+call melting#highlight('zshSubst',           { 'fg': s:n_green   })
+call melting#highlight('zshSubstDelim',      { 'fg': s:n_magenta})
+call melting#highlight('zshVariableDef',     { 'fg': s:n_cyan   })
+
+" Man
+call melting#highlight('manReference     ',   { 'fg': s:b_red} )
+call melting#highlight('manUnderline     ',   { 'fg': s:b_red} )
+
+call melting#highlight('manTitle         ',   { 'fg': s:n_yellow} )
+call melting#highlight('manBold          ',   { 'fg': s:b_cyan} )
+
+call melting#highlight('manOptionDesc    ',   { 'fg': s:n_magenta} )
+call melting#highlight('manSectionHeading',   { 'fg': s:n_magenta} )
+call melting#highlight('manSubHeading    ',   { 'fg': s:n_magenta} )
+
+" For Vim help
+call melting#highlight('helpHyperTextEntry', { 'fg': s:b_red} )
+call melting#highlight('helpSectionDelim',   { 'fg': s:n_magenta} )
