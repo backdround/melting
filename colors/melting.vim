@@ -16,7 +16,7 @@ let g:colors_name = 'melting'
 let s:background = "#14171E"
 let s:foreground = "#C6C8D1"
 
-let s:n_black    = "#1D1E26"
+let s:n_black    = "#1B1E25"
 let s:n_red      = "#BF5C80"
 let s:n_green    = "#6AA28C"
 let s:n_yellow   = "#C2BC85"
@@ -25,7 +25,10 @@ let s:n_magenta  = "#A093C7"
 let s:n_cyan     = "#89B8C2"
 let s:n_white    = "#C6C8D1"
 
-let s:b_black    = "#6B7089"
+let s:n_gray     = "#3D4252"
+let s:b_gray     = "#6B7089"
+
+let s:b_black    = "#1F222A"
 let s:b_red      = "#F2779B"
 let s:b_green    = "#88CEA2"
 let s:b_yellow   = "#DCDE92"
@@ -63,13 +66,13 @@ endif
 
 
 " Highlights
-call melting#highlight('Cursor',             { 'fg': s:n_black, 'bg': s:b_white })
-call melting#highlight('CursorLine',         { 'bg': s:n_black                  })
-call melting#highlight("ColorColumn",        { 'bg': s:n_black                  })
-call melting#highlight('CursorColumn',       { 'bg': s:n_black                  })
+call melting#highlight('Cursor',             { 'fg': s:b_black, 'bg': s:b_white })
+call melting#highlight('CursorLine',         { 'bg': s:b_black                  })
+call melting#highlight("ColorColumn",        { 'bg': s:b_black                  })
+call melting#highlight('CursorColumn',       { 'bg': s:b_black                  })
 
 call melting#highlight('Normal',             { 'fg': s:foreground, 'bg': s:background})
-call melting#highlight('Comment',            { 'fg': s:b_black, 'mode': 'italic'})
+call melting#highlight('Comment',            { 'fg': s:b_gray, 'mode': 'italic'})
 call melting#highlight('Statement',          { 'fg': s:n_magenta} )
 call melting#highlight('Function',           { 'fg': s:n_magenta} )
 call melting#highlight('Identifier',         { 'fg': s:b_blue} )
@@ -87,16 +90,16 @@ call melting#highlight('Title',              { 'fg': s:n_cyan} )
 call melting#highlight('Underlined',         { 'fg': s:b_red} )
 call melting#highlight('NonText',            { 'fg': s:n_magenta} )
 call melting#highlight('Ignore',             { 'fg': s:n_white} )
-call melting#highlight('Todo',               { 'fg': s:b_cyan, 'bg': s:b_black} )
+call melting#highlight('Todo',               { 'fg': s:b_cyan, 'bg': s:b_gray} )
 
 call melting#highlight('Search',             { 'fg': s:n_black, 'bg': s:b_cyan } )
 call melting#highlight('IncSearch',          { 'fg': s:n_black, 'bg': s:b_yellow } )
 
 call melting#highlight('Special',            { 'fg': s:n_yellow} )
-call melting#highlight('Visual',             { 'fg': s:b_white,    'bg': "#3D4252"    } )
-call melting#highlight('MatchParen',         { 'fg': s:b_cyan,    'bg': s:b_black    } )
+call melting#highlight('Visual',             { 'fg': s:b_white,    'bg': s:n_gray    } )
+call melting#highlight('MatchParen',         { 'fg': s:b_cyan,    'bg': s:b_gray    } )
 
-call melting#highlight('Folded',             { 'fg': s:b_magenta,   'bg': s:b_black       } )
+call melting#highlight('Folded',             { 'fg': s:b_magenta,   'bg': s:b_gray       } )
 
 call melting#highlight('Pmenu',              { 'fg': s:b_white,    'bg': "#212831"      } )
 call melting#highlight('PmenuSel',           { 'fg': s:n_black,    'bg': s:b_blue       } )
@@ -105,7 +108,7 @@ call melting#highlight('PmenuThumb',         { 'bg': s:b_blue      } )
 
 call melting#highlight('SignColumn',         { 'bg': s:n_black      } )
 
-call melting#highlight('LineNr',             { 'fg': s:b_black, 'bg': s:n_black} )
+call melting#highlight('LineNr',             { 'fg': s:b_gray, 'bg': s:n_black} )
 call melting#highlight('CursorLineNr',       { 'fg': s:n_white, 'bg': s:n_black} )
 call melting#highlight('VertSplit',          { 'bg': "#2C2E3A"} )
 
@@ -141,6 +144,68 @@ call melting#highlight('manOptionDesc    ',   { 'fg': s:n_magenta} )
 call melting#highlight('manSectionHeading',   { 'fg': s:n_magenta} )
 call melting#highlight('manSubHeading    ',   { 'fg': s:n_magenta} )
 
-" For Vim help
+" Vim help
 call melting#highlight('helpHyperTextEntry', { 'fg': s:b_red} )
 call melting#highlight('helpSectionDelim',   { 'fg': s:n_magenta} )
+
+" Vim
+call melting#highlight('vimFunction',        { 'fg': s:n_green} )
+
+
+" Plugins
+
+" DevIcons - NERDTree
+call melting#highlight('NERDTreeFlags', {'fg': s:n_green})
+
+" Coc
+call melting#highlight('ErrorColor',   {'fg': s:b_red    , 'bg': s:n_black})
+call melting#highlight('WarningColor', {'fg': s:b_yellow , 'bg': s:n_black})
+call melting#highlight('InfoColor',    {'fg': s:b_green  , 'bg': s:n_black})
+call melting#highlight('HintColor',    {'fg': s:b_magenta, 'bg': s:n_black})
+
+hi! link CocErrorHighlight   ErrorColor
+hi! link CocWarningHighlight WarningColor
+hi! link CocInfoHighlight    InfoColor
+hi! link CocHintHighlight    HintColor
+
+hi! link CocErrorSign        ErrorColor
+hi! link CocWarningSign      WarningColor
+hi! link CocInfoSign         InfoColor
+hi! link CocHintSign         HintColor
+
+call melting#highlight('CocErrorLine',          {'bg': s:n_black})
+call melting#highlight('CocWarningLine',        {'bg': s:n_black})
+call melting#highlight('CocInfoLine',           {'bg': s:n_black})
+call melting#highlight('CocHintLine',           {'bg': s:n_black})
+
+call melting#highlight('CocCodeLens',           {'fg': s:b_gray                  })
+call melting#highlight('CocFloating',           {'fg': s:b_white, 'bg': "#212831"})
+call melting#highlight('CocHighlightText' ,     {'fg': s:n_cyan,  'bg': s:n_gray })
+
+call melting#highlight('HighlightedyankRegion', {'fg': s:b_white, 'bg': s:n_gray })
+
+" Signature
+let g:SignatureMarkTextHL   = 'ThemeSignatureMarkText'
+let g:SignatureMarkerTextHL = 'ThemeSignatureMarkerText'
+call melting#highlight('ThemeSignatureMarkerText', {'fg': s:b_red,     'bg': s:n_black})
+call melting#highlight('ThemeSignatureMarkText',   {'fg': s:n_magenta, 'bg': s:n_black})
+
+" Fzf
+let g:fzf_colors =
+      \ { 'fg'         : ['fg', 'Fzf'        ] ,
+      \   'bg'         : ['bg', 'Fzf'        ] ,
+      \   'fg+'        : ['fg', 'FzfS'       ] ,
+      \   'bg+'        : ['bg', 'FzfS'       ] ,
+      \   'hl'         : ['fg', 'FzfHl'      ] ,
+      \   'hl+'        : ['bg', 'FzfHl'      ] ,
+      \   'preview-fg' : ['fg', 'FzfPreview' ] ,
+      \   'preview-bg' : ['bg', 'FzfPreview' ] ,
+      \   'border'     : ['fg', 'FzfBorder'  ] ,
+      \   'gutter'     : ['fg', 'FzfGutter'  ] }
+
+call melting#highlight('Fzf',        {'fg': s:foreground, 'bg': s:background})
+call melting#highlight('FzfS',       {'fg': s:b_white,    'bg': s:n_gray    })
+call melting#highlight('FzfHl',      {'fg': s:n_red,      'bg': s:n_red     })
+call melting#highlight('FzfPreview', {'fg': s:n_white,    'bg': s:n_black   })
+call melting#highlight('FzfBorder',  {'fg': s:b_green                       })
+call melting#highlight('FzfGutter',  {'fg': s:background                    })
