@@ -66,90 +66,90 @@ endif
 
 
 " Highlights
-call melting#highlight('Cursor',             { 'fg': s:b_black, 'bg': s:b_white })
-call melting#highlight('CursorLine',         { 'bg': s:b_black                  })
-call melting#highlight("ColorColumn",        { 'bg': s:b_black                  })
-call melting#highlight('CursorColumn',       { 'bg': s:b_black                  })
+call melting#highlight('Cursor',       { 'fg': s:b_black,    'bg': s:b_white    })
+call melting#highlight('CursorLine',   { 'bg': s:b_black                        })
+call melting#highlight("ColorColumn",  { 'bg': s:b_black                        })
+call melting#highlight('CursorColumn', { 'bg': s:b_black                        })
 
-call melting#highlight('Normal',             { 'fg': s:foreground, 'bg': s:background})
-call melting#highlight('Comment',            { 'fg': s:b_gray, 'mode': 'italic'})
-call melting#highlight('Statement',          { 'fg': s:n_magenta} )
-call melting#highlight('Function',           { 'fg': s:n_magenta} )
-call melting#highlight('Identifier',         { 'fg': s:b_blue} )
+call melting#highlight('Normal',       { 'fg': s:foreground, 'bg': s:background })
+call melting#highlight('Comment',      { 'fg': s:b_gray,     'mode': 'italic'   })
+call melting#highlight('Statement',    { 'fg': s:n_magenta                      })
+call melting#highlight('Function',     { 'fg': s:n_magenta                      })
+call melting#highlight('Identifier',   { 'fg': s:b_blue                         })
 
-call melting#highlight('Type',               { 'fg': s:b_cyan} )
-call melting#highlight('Constant',           { 'fg': s:b_yellow} )
-call melting#highlight('String',             { 'fg': s:b_yellow} )
-call melting#highlight('Operator',           { 'fg': s:b_yellow} )
+call melting#highlight('Type',         { 'fg': s:b_cyan                         })
+call melting#highlight('Constant',     { 'fg': s:b_yellow                       })
+call melting#highlight('String',       { 'fg': s:b_yellow                       })
+call melting#highlight('Operator',     { 'fg': s:b_yellow                       })
 
-call melting#highlight('PreProc',            { 'fg': s:n_red} )
-call melting#highlight('Include',            { 'fg': s:n_red} )
+call melting#highlight('PreProc',      { 'fg': s:n_red                          })
+call melting#highlight('Include',      { 'fg': s:n_red                          })
 
-call melting#highlight('Delimiter',          { 'fg': s:n_green} )
-call melting#highlight('Title',              { 'fg': s:n_cyan} )
-call melting#highlight('Underlined',         { 'fg': s:b_red} )
-call melting#highlight('NonText',            { 'fg': s:n_magenta} )
-call melting#highlight('Ignore',             { 'fg': s:n_white} )
-call melting#highlight('Todo',               { 'fg': s:b_cyan, 'bg': s:b_gray} )
+call melting#highlight('Delimiter',    { 'fg': s:n_green                        })
+call melting#highlight('Title',        { 'fg': s:n_cyan                         })
+call melting#highlight('Underlined',   { 'fg': s:b_red                          })
+call melting#highlight('NonText',      { 'fg': s:n_magenta                      })
+call melting#highlight('Ignore',       { 'fg': s:n_white                        })
+call melting#highlight('Todo',         { 'fg': s:b_cyan,     'bg': s:b_gray     })
 
-call melting#highlight('Search',             { 'fg': s:n_black, 'bg': s:b_cyan } )
-call melting#highlight('IncSearch',          { 'fg': s:n_black, 'bg': s:b_yellow } )
+call melting#highlight('Search',       { 'fg': s:n_black,    'bg': s:b_cyan     })
+call melting#highlight('IncSearch',    { 'fg': s:n_black,    'bg': s:b_yellow   })
 
-call melting#highlight('Special',            { 'fg': s:n_yellow} )
-call melting#highlight('Visual',             { 'fg': s:b_white,    'bg': s:n_gray    } )
-call melting#highlight('MatchParen',         { 'fg': s:b_cyan,    'bg': s:b_gray    } )
+call melting#highlight('Special',      { 'fg': s:n_yellow                       })
+call melting#highlight('Visual',       { 'fg': s:b_white,    'bg': s:n_gray     })
+call melting#highlight('MatchParen',   { 'fg': s:b_cyan,     'bg': s:b_gray     })
 
-call melting#highlight('Folded',             { 'fg': s:b_magenta,   'bg': s:b_gray       } )
+call melting#highlight('Folded',       { 'fg': s:b_magenta,  'bg': s:b_gray     })
 
-call melting#highlight('Pmenu',              { 'fg': s:b_white,    'bg': "#212831"      } )
-call melting#highlight('PmenuSel',           { 'fg': s:n_black,    'bg': s:b_blue       } )
-call melting#highlight('PmenuSbar',          { 'bg': s:n_black       } )
-call melting#highlight('PmenuThumb',         { 'bg': s:b_blue      } )
+call melting#highlight('Pmenu',        { 'fg': s:b_white,    'bg': "#212831"    })
+call melting#highlight('PmenuSel',     { 'fg': s:n_black,    'bg': s:b_blue     })
+call melting#highlight('PmenuSbar',    { 'bg': s:n_black                        })
+call melting#highlight('PmenuThumb',   { 'bg': s:b_blue                         })
 
-call melting#highlight('SignColumn',         { 'bg': s:n_black      } )
+call melting#highlight('SignColumn',   { 'bg': s:n_black                        })
 
-call melting#highlight('LineNr',             { 'fg': s:b_gray, 'bg': s:n_black} )
-call melting#highlight('CursorLineNr',       { 'fg': s:n_white, 'bg': s:n_black} )
-call melting#highlight('VertSplit',          { 'bg': "#2C2E3A"} )
+call melting#highlight('LineNr',       { 'fg': s:b_gray,     'bg': s:n_black    })
+call melting#highlight('CursorLineNr', { 'fg': s:n_white,    'bg': s:n_black    })
+call melting#highlight('VertSplit',    { 'bg': "#2C2E3A"                        })
 
-call melting#highlight('Directory',          { 'fg': s:b_blue} )
+call melting#highlight('Directory',    { 'fg': s:b_blue                         })
 
-call melting#highlight('Error',              { 'fg': s:n_red})
-call melting#highlight('ErrorMsg',           { 'fg': s:n_red})
-call melting#highlight('WarningMsg',         { 'fg': s:n_yellow})
-call melting#highlight('Whitespace',         { 'fg': s:n_magenta})
+call melting#highlight('Error',        { 'fg': s:n_red                          })
+call melting#highlight('ErrorMsg',     { 'fg': s:n_red                          })
+call melting#highlight('WarningMsg',   { 'fg': s:n_yellow                       })
+call melting#highlight('Whitespace',   { 'fg': s:n_magenta                      })
 
-call melting#highlight("DiffAdd",            { 'fg': s:n_green , 'bg': s:n_black})
-call melting#highlight("DiffChange",         { 'fg': s:n_yellow, 'bg': s:n_black})
-call melting#highlight("DiffDelete",         { 'fg': s:n_red   , 'bg': s:n_black})
-call melting#highlight("DiffText",           { 'fg': s:n_blue  , 'bg': s:n_black})
+call melting#highlight("DiffAdd",      { 'fg': s:n_green,    'bg': s:n_black    })
+call melting#highlight("DiffChange",   { 'fg': s:n_yellow,   'bg': s:n_black    })
+call melting#highlight("DiffDelete",   { 'fg': s:n_red,      'bg': s:n_black    })
+call melting#highlight("DiffText",     { 'fg': s:n_blue,     'bg': s:n_black    })
 
 
 " Filetypes
 
 " Shell scripts
-call melting#highlight('zshDeref',           { 'fg': s:n_red   })
+call melting#highlight('zshDeref',           { 'fg': s:n_red     })
 call melting#highlight('zshSubst',           { 'fg': s:n_green   })
-call melting#highlight('zshSubstDelim',      { 'fg': s:n_magenta})
-call melting#highlight('zshVariableDef',     { 'fg': s:n_cyan   })
+call melting#highlight('zshSubstDelim',      { 'fg': s:n_magenta })
+call melting#highlight('zshVariableDef',     { 'fg': s:n_cyan    })
 
 " Man
-call melting#highlight('manReference     ',   { 'fg': s:b_red} )
-call melting#highlight('manUnderline     ',   { 'fg': s:b_red} )
+call melting#highlight('manReference     ',  { 'fg': s:b_red     })
+call melting#highlight('manUnderline     ',  { 'fg': s:b_red     })
 
-call melting#highlight('manTitle         ',   { 'fg': s:n_yellow} )
-call melting#highlight('manBold          ',   { 'fg': s:b_cyan} )
+call melting#highlight('manTitle         ',  { 'fg': s:n_yellow  })
+call melting#highlight('manBold          ',  { 'fg': s:b_cyan    })
 
-call melting#highlight('manOptionDesc    ',   { 'fg': s:n_magenta} )
-call melting#highlight('manSectionHeading',   { 'fg': s:n_magenta} )
-call melting#highlight('manSubHeading    ',   { 'fg': s:n_magenta} )
+call melting#highlight('manOptionDesc    ',  { 'fg': s:n_magenta })
+call melting#highlight('manSectionHeading',  { 'fg': s:n_magenta })
+call melting#highlight('manSubHeading    ',  { 'fg': s:n_magenta })
 
 " Vim help
-call melting#highlight('helpHyperTextEntry', { 'fg': s:b_red} )
-call melting#highlight('helpSectionDelim',   { 'fg': s:n_magenta} )
+call melting#highlight('helpHyperTextEntry', { 'fg': s:b_red     })
+call melting#highlight('helpSectionDelim',   { 'fg': s:n_magenta })
 
 " Vim
-call melting#highlight('vimFunction',        { 'fg': s:n_green} )
+call melting#highlight('vimFunction',        { 'fg': s:n_green   })
 
 
 " Plugins
