@@ -25,6 +25,7 @@ let s:n_magenta  = "#A093C7"
 let s:n_cyan     = "#89B8C2"
 let s:n_white    = "#C6C8D1"
 
+let s:d_gray     = "#22252F"
 let s:n_gray     = "#3D4252"
 let s:b_gray     = "#6B7089"
 
@@ -101,10 +102,10 @@ call melting#highlight('MatchParen',   { 'fg': s:b_cyan,     'bg': s:b_gray     
 
 call melting#highlight('Folded',       { 'fg': s:b_magenta,  'bg': s:b_gray     })
 
-call melting#highlight('Pmenu',        { 'fg': s:b_white,    'bg': "#212831"    })
-call melting#highlight('PmenuSel',     { 'fg': s:n_black,    'bg': s:b_blue     })
+call melting#highlight('Pmenu',        { 'fg': s:n_white,    'bg': s:d_gray     })
+call melting#highlight('PmenuSel',     { 'fg': s:b_white,    'bg': s:n_gray     })
 call melting#highlight('PmenuSbar',    { 'bg': s:n_black                        })
-call melting#highlight('PmenuThumb',   { 'bg': s:b_blue                         })
+call melting#highlight('PmenuThumb',   { 'bg': s:b_gray                         })
 
 call melting#highlight('SignColumn',   { 'bg': s:n_black                        })
 
@@ -178,11 +179,11 @@ call melting#highlight('CocWarningLine',        {'bg': s:n_black})
 call melting#highlight('CocInfoLine',           {'bg': s:n_black})
 call melting#highlight('CocHintLine',           {'bg': s:n_black})
 
-call melting#highlight('CocCodeLens',           {'fg': s:b_gray                  })
-call melting#highlight('CocFloating',           {'fg': s:b_white, 'bg': "#212831"})
-call melting#highlight('CocHighlightText' ,     {'fg': s:n_cyan,  'bg': s:n_gray })
+call melting#highlight('CocCodeLens',           {'fg': s:b_gray                 })
+call melting#highlight('CocFloating',           {'fg': s:b_white, 'bg': s:d_gray})
+call melting#highlight('CocHighlightText' ,     {'fg': s:n_cyan,  'bg': s:n_gray})
 
-call melting#highlight('HighlightedyankRegion', {'fg': s:b_white, 'bg': s:n_gray })
+call melting#highlight('HighlightedyankRegion', {'fg': s:b_white, 'bg': s:n_gray})
 
 " Signature
 let g:SignatureMarkTextHL   = 'ThemeSignatureMarkText'
