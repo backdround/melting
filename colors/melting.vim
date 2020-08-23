@@ -100,6 +100,7 @@ call melting#highlight('Special',      { 'fg': s:n_yellow                       
 call melting#highlight('Visual',       { 'fg': s:b_white,    'bg': s:n_gray     })
 call melting#highlight('MatchParen',   { 'fg': s:b_cyan,     'bg': s:b_gray     })
 
+call melting#highlight('FoldColumn',   { 'fg': s:b_magenta,  'bg': s:n_black    })
 call melting#highlight('Folded',       { 'fg': s:b_magenta,  'bg': s:b_gray     })
 
 call melting#highlight('Pmenu',        { 'fg': s:n_white,    'bg': s:d_gray     })
