@@ -210,3 +210,13 @@ call melting#highlight('FzfHl',      {'fg': s:n_red,      'bg': s:n_red     })
 call melting#highlight('FzfPreview', {'fg': s:n_white,    'bg': s:n_black   })
 call melting#highlight('FzfBorder',  {'fg': s:b_green                       })
 call melting#highlight('FzfGutter',  {'fg': s:background                    })
+
+" Easymotion
+call melting#highlight('EasyMotionTarget',        {'fg': s:n_red,  'bg': s:background, 'mode': 'bold'})
+call melting#highlight('EasyMotionShade',         {'fg': s:n_gray, 'bg': s:background, 'mode': 'bold'})
+
+call melting#highlight('EasyMotionTarget2First',  {'fg': s:b_red,  'bg': s:d_gray,     'mode': 'bold'})
+call melting#highlight('EasyMotionTarget2Second', {'fg': s:b_gray, 'bg': s:d_gray,     'mode': 'bold'})
+
+call melting#highlight('EasyMotionIncSearch',     {'fg': s:b_cyan                                    })
+call melting#highlight('EasyMotionMoveHL',        {'fg': s:b_yellow                                  })
