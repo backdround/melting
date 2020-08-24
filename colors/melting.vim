@@ -221,3 +221,6 @@ call melting#highlight('EasyMotionTarget2Second', {'fg': s:b_gray, 'bg': s:d_gra
 
 call melting#highlight('EasyMotionIncSearch',     {'fg': s:b_cyan                                    })
 call melting#highlight('EasyMotionMoveHL',        {'fg': s:b_yellow                                  })
+
+" Floaterm
+call melting#highlight('FloatermBorder', {'fg': s:b_green })
