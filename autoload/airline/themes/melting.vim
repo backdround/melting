@@ -27,7 +27,7 @@ function! s:build_palette() abort
   let l:base       = [s:n_white, s:d_gray,    1, 7]
   let l:transition = [s:b_white, s:n_gray,    1, 7]
 
-  let l:inactive   = [s:b_gray,  s:b_black,   1, 7]
+  let l:inactive   = ["#A2A6BA", "#242932",   1, 7]
   let l:normal     = [s:b_black, s:n_cyan,    1, 7]
   let l:insert     = [s:b_black, s:n_green,   1, 7]
   let l:replace    = [s:b_black, s:b_red,     1, 7]
