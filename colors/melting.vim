@@ -77,6 +77,7 @@ call melting#highlight('Comment',      { 'fg': s:b_gray,     'mode': 'italic'   
 call melting#highlight('Statement',    { 'fg': s:n_magenta                      })
 call melting#highlight('Function',     { 'fg': s:n_magenta                      })
 call melting#highlight('Identifier',   { 'fg': s:b_blue                         })
+call melting#highlight('EndOfBuffer',  { 'fg': s:d_gray                         })
 
 call melting#highlight('Type',         { 'fg': s:b_cyan                         })
 call melting#highlight('Constant',     { 'fg': s:b_yellow                       })
@@ -184,7 +185,16 @@ call melting#highlight('CocCodeLens',           {'fg': s:b_gray                 
 call melting#highlight('CocFloating',           {'fg': s:b_white, 'bg': s:d_gray})
 call melting#highlight('CocHighlightText' ,     {'fg': s:n_cyan,  'bg': s:n_gray})
 
+" Coc highlighted yank
 call melting#highlight('HighlightedyankRegion', {'fg': s:b_white, 'bg': s:n_gray})
+
+" Coc explorer
+call melting#highlight('CocExplorerNormalFloatBorder	', {'fg': s:b_green })
+call melting#highlight('CocExplorerNormalFloat	', {})
+
+call melting#highlight('CocExplorerFileSize', {'fg': s:b_magenta})
+call melting#highlight('CocExplorerFileDirectory', {'fg': s:n_magenta})
+call melting#highlight('CocExplorerFileRootName', {'fg': s:b_cyan})
 
 " Signature
 let g:SignatureMarkTextHL   = 'ThemeSignatureMarkText'
