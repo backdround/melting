@@ -8,8 +8,8 @@ local common = {
 
   Normal = { fg = c.foreground, bg = c.background },
   Comment = { fg = c.bright.gray, gui = "italic" },
-  Statement = { fg = c.dark.magenta },
-  Function = { fg = c.dark.magenta },
+  Statement = { fg = c.bright.magenta },
+  Function = { fg = c.bright.magenta },
   Identifier = { fg = c.bright.blue },
   EndOfBuffer = { fg = c.dark.gray },
 
@@ -24,7 +24,7 @@ local common = {
   Delimiter = { fg = c.dark.green },
   Title = { fg = c.dark.cyan },
   Underlined = { fg = c.bright.red },
-  NonText = { fg = c.dark.magenta },
+  NonText = { fg = c.bright.magenta },
   Ignore = { fg = c.dark.white },
   Todo = { fg = c.bright.cyan, bg = c.bright.gray },
 
@@ -54,12 +54,17 @@ local common = {
   Error = { fg = c.dark.red },
   ErrorMsg = { fg = c.dark.red },
   WarningMsg = { fg = c.dark.yellow },
-  Whitespace = { fg = c.dark.magenta },
+  Whitespace = { fg = c.bright.magenta },
 
   DiffAdd = { fg = c.dark.green, bg = c.dark.black },
   DiffChange = { fg = c.dark.yellow, bg = c.dark.black },
   DiffDelete = { fg = c.dark.red, bg = c.dark.black },
   DiffText = { fg = c.dark.blue, bg = c.dark.black },
+
+  TabLineFill = { bg = c.black },
+  TabLine = { bg = c.gray, fg = c.foreground },
+  TabLineSel = { bg = c.bright.gray, fg = c.dark.black, gui = "bold,italic" },
+  TabLineSelLabel = { bg = c.bright.gray, fg = c.foreground },
 }
 
 return common
