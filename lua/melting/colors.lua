@@ -1,13 +1,15 @@
 local colors = {
+
+  black = "#0B0C0E",
   background = "#14171E",
+  gray1 = "#1B1F27",
+  gray2 = "#333843",
+  gray3 = "#61677F",
+  gray4 = "#898EA4",
   foreground = "#B4B7C5",
-  gray = "#333843",
-  black = "#1B1F27",
+  white = "#E1E2E8",
 
   dark = {
-    gray = "#22252F",
-    black = "#0B0C0E",
-    white = "#898EA4",
     red = "#BF5C80",
     green = "#6AA28C",
     yellow = "#C2BC85",
@@ -16,10 +18,7 @@ local colors = {
     cyan = "#89B8C2",
   },
 
-  bright = {
-    gray = "#61677F",
-    black = "#1E2029",
-    white = "#E1E2E8",
+  light = {
     red = "#F2779B",
     green = "#88CEA2",
     yellow = "#DCDE92",

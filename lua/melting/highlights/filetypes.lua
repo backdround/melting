@@ -4,23 +4,23 @@ local filetypes = {
   -- Shell scripts
   zshDeref = { fg = c.dark.red },
   zshSubst = { fg = c.dark.green },
-  zshSubstDelim = { fg = c.bright.magenta },
+  zshSubstDelim = { fg = c.light.magenta },
   zshVariableDef = { fg = c.dark.cyan },
 
   -- Man
-  manReference = { fg = c.bright.red },
-  manUnderline = { fg = c.bright.red },
+  manReference = { fg = c.light.red },
+  manUnderline = { fg = c.light.red },
 
   manTitle = { fg = c.dark.yellow },
-  manBold = { fg = c.bright.cyan },
+  manBold = { fg = c.light.cyan },
 
-  manOptionDesc = { fg = c.bright.magenta },
-  manSectionHeading = { fg = c.bright.magenta },
-  manSubHeading = { fg = c.bright.magenta },
+  manOptionDesc = { fg = c.light.magenta },
+  manSectionHeading = { fg = c.light.magenta },
+  manSubHeading = { fg = c.light.magenta },
 
   -- Vim help
-  helpHyperTextEntry = { fg = c.bright.red },
-  helpSectionDelim = { fg = c.bright.magenta },
+  helpHyperTextEntry = { fg = c.light.red },
+  helpSectionDelim = { fg = c.light.magenta },
 
   -- Vim
   vimFunction = { fg = c.dark.green },

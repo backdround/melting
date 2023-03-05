@@ -2,12 +2,12 @@ package.loaded["melting.colors"] = nil
 local c = require("melting.colors")
 
 local colors = {
-	black = c.dark.black,
+	black = c.black,
 	white = c.foreground,
 
-	gray1 = c.black,
-	gray2 = c.gray,
-	gray3 = c.bright.gray,
+	gray1 = c.gray1,
+	gray2 = c.gray2,
+	gray3 = c.gray3,
 
 	green = c.dark.green,
 	magenta = c.dark.magenta,
