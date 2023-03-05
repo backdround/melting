@@ -9,22 +9,22 @@ local colors = {
   foreground = "#B4B7C5",
   white = "#E1E2E8",
 
+  cyan = "#9BE1D0",
+
   dark = {
     red = "#BF5C80",
     green = "#6AA28C",
-    yellow = "#C2BC85",
+    yellow = "#C3C49C",
     blue = "#84A0C6",
-    magenta = "#8879B4",
-    cyan = "#89B8C2",
+    magenta = "#9B89D1",
   },
 
   light = {
     red = "#F2779B",
     green = "#88CEA2",
     yellow = "#DCDE92",
-    blue = "#A9BBD5",
-    magenta = "#A093C7",
-    cyan = "#9BE1D0",
+    blue = "#A5D4E4",
+    magenta = "#BFB2E6",
   },
 }
 

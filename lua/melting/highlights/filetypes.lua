@@ -5,14 +5,14 @@ local filetypes = {
   zshDeref = { fg = c.dark.red },
   zshSubst = { fg = c.dark.green },
   zshSubstDelim = { fg = c.light.magenta },
-  zshVariableDef = { fg = c.dark.cyan },
+  zshVariableDef = { fg = c.cyan },
 
   -- Man
   manReference = { fg = c.light.red },
   manUnderline = { fg = c.light.red },
 
   manTitle = { fg = c.dark.yellow },
-  manBold = { fg = c.light.cyan },
+  manBold = { fg = c.cyan },
 
   manOptionDesc = { fg = c.light.magenta },
   manSectionHeading = { fg = c.light.magenta },
