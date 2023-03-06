@@ -20,12 +20,13 @@ end
 
 -- Function that real applies highlight to group
 local function makeHighlight(group, settings)
-  local commandTemplate = "highlight %s guifg=%s guibg=%s gui=%s"
+  local cmdTemplate = "highlight %s guifg=%s guibg=%s gui=%s guisp=%s"
   local fg = settings.fg or "none"
   local bg = settings.bg or "none"
   local gui = settings.gui or "none"
+  local guisp = settings.guisp or "none"
 
-  local highlightCommand = string.format(commandTemplate, group, fg, bg, gui)
+  local highlightCommand = string.format(cmdTemplate, group, fg, bg, gui, guisp)
   vim.api.nvim_command(highlightCommand)
 end
 

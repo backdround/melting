@@ -2,7 +2,7 @@ local c = require("melting.colors")
 
 local filetypes = {
   -- Shell scripts
-  zshDeref = { fg = c.dark.red },
+  zshDeref = { fg = c.red },
   zshSubst = { fg = c.dark.green },
   zshSubstDelim = { fg = c.light.magenta },
   zshVariableDef = { fg = c.cyan },

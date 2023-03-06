@@ -10,18 +10,21 @@ local colors = {
   foreground = "#B4B7C5",
   white = "#E1E2E8",
 
+  red = "#D2516F",
   cyan = "#9BE1D0",
 
+  hint = "#7AF0D3",
+  warn = "#F6E22C",
+  error = "#FE1048",
+
   dark = {
-    red = "#BF5C80",
     green = "#6AA28C",
-    yellow = "#C3C49C",
+    yellow = "#BFC08C",
     blue = "#84A0C6",
     magenta = "#9B89D1",
   },
 
   light = {
-    red = "#F2779B",
     green = "#88CEA2",
     yellow = "#E0E1B2",
     blue = "#A5D4E4",

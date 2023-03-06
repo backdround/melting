@@ -34,12 +34,12 @@ local common = {
   SignColumn = { bg = c.gray0 },
 
   -- Vim builtin features
-  ErrorMsg = { fg = c.dark.red },
-  WarningMsg = { fg = c.dark.yellow },
+  ErrorMsg = { fg = c.error },
+  WarningMsg = { fg = c.warn },
 
   DiffAdd = { fg = c.dark.green, bg = c.black },
   DiffChange = { fg = c.dark.yellow, bg = c.black },
-  DiffDelete = { fg = c.dark.red, bg = c.black },
+  DiffDelete = { fg = c.red, bg = c.black },
   DiffText = { fg = c.dark.blue, bg = c.black },
 
   -- Status, bars and tabs
@@ -68,7 +68,23 @@ local common = {
   EndOfBuffer = { fg = c.gray0 },
   MatchParen = { fg = c.black, bg = c.gray4 },
   SpecialKey = { fg = c.dark.green, gui = "bold,italic" },
-  Whitespace = { fg = c.light.red },
+  Whitespace = { fg = c.error },
+
+  -- Diagnostic
+  DiagnosticError = { fg = c.error },
+  DiagnosticWarn = { fg = c.warn },
+  DiagnosticInfo = { fg = c.hint },
+  DiagnosticHint = { fg = c.hint },
+
+  DiagnosticUnderlineError = { gui = "underline", guisp = c.error },
+  DiagnosticUnderlineWarn = { gui = "underline", guisp = c.warn },
+  DiagnosticUnderlineInfo = { gui = "underline", guisp = c.hint },
+  DiagnosticUnderlineHint = { gui = "underline", guisp = c.hint },
+
+  DiagnosticSignError = { fg = c.error, bg = c.gray0 },
+  DiagnosticSignWarn = { fg = c.warn, bg = c.gray0 },
+  DiagnosticSignInfo = { fg = c.hint, bg = c.gray0 },
+  DiagnosticSignHint = { fg = c.hint, bg = c.gray0 },
 
   -- Language commons
   Comment = { fg = c.gray3, gui = "italic" },
@@ -81,18 +97,18 @@ local common = {
   Statement = { fg = c.light.magenta },
   Operator = { fg = c.dark.yellow },
 
-  PreProc = { fg = c.dark.red },
+  PreProc = { fg = c.red },
 
   Type = { fg = c.cyan, gui = "bold" },
 
   Special = { fg = c.dark.yellow },
   Delimiter = { fg = c.gray4 },
 
-  Underlined = { fg = c.light.red },
+  Underlined = { fg = c.red },
 
   Ignore = { fg = c.gray4 },
 
-  Error = { fg = c.dark.red },
+  Error = { fg = c.error },
 
   Todo = { fg = c.cyan, bg = c.gray1, gui = "bold" },
 }
