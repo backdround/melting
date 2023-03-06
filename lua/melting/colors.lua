@@ -2,9 +2,10 @@ local colors = {
 
   black = "#0B0C0E",
   background = "#14171E",
-  gray1 = "#1B1F27",
+  gray0 = "#1B1F27",
+  gray1 = "#22262F",
   gray2 = "#333843",
-  gray3 = "#61677F",
+  gray3 = "#63687D",
   gray4 = "#898EA4",
   foreground = "#B4B7C5",
   white = "#E1E2E8",
@@ -22,7 +23,7 @@ local colors = {
   light = {
     red = "#F2779B",
     green = "#88CEA2",
-    yellow = "#DCDE92",
+    yellow = "#E0E1B2",
     blue = "#A5D4E4",
     magenta = "#BFB2E6",
   },

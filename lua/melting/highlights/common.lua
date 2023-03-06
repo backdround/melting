@@ -1,54 +1,74 @@
 local c = require("melting.colors")
 
 local common = {
-  Cursor = { fg = c.red, bg = c.white },
-  CursorLine = { bg = c.gray1 },
-  ColorColumn = { bg = c.gray1 },
-  CursorColumn = { bg = c.gray1 },
-
+  -- General
   Normal = { fg = c.foreground, bg = c.background },
-  EndOfBuffer = { fg = c.gray1 },
+  NormalFloat = { fg = c.foreground, bg = c.background },
+  Visual = { fg = c.foreground, bg = c.gray1 },
 
-  String = { fg = c.light.yellow },
+  -- Cursor lines
+  Cursor = { fg = c.black, bg = c.foreground },
+  CursorLine = { bg = c.gray0 },
+  ColorColumn = { bg = c.gray0 },
+  CursorColumn = { bg = c.gray0 },
 
+  -- Search and replace
+  Search = { fg = c.black, bg = c.dark.blue, gui = "bold" },
+  IncSearch = { fg = c.black, bg = c.light.yellow, gui = "bold" },
+  Substitute = { fg = c.black, bg = c.dark.blue, gui = "bold" },
 
-  Title = { fg = c.cyan },
-  NonText = { fg = c.light.magenta },
-  Todo = { fg = c.cyan, bg = c.gray3 },
+  -- Completion
+  Pmenu = { fg = c.foreground, bg = c.gray0 },
+  PmenuSel = { fg = c.black, bg = c.gray3, gui = "bold" },
+  PmenuSbar = { bg = c.gray1 },
+  PmenuThumb = { bg = c.gray4 },
 
-  Search = { fg = c.black, bg = c.cyan },
-  IncSearch = { fg = c.black, bg = c.light.yellow },
+  -- Folds
+  Folded = { fg = c.dark.yellow, bg = c.gray1 },
+  FoldColumn = { fg = c.gray3, bg = c.gray0 },
 
-  Visual = { fg = c.white, bg = c.gray2 },
-  MatchParen = { fg = c.cyan, bg = c.gray3 },
+  -- Window delimiters.
+  WinSeparator = { bg = c.gray1, fg = c.foreground },
+  LineNr = { fg = c.gray3, bg = c.gray0 },
+  CursorLineNr = { fg = c.foreground, bg = c.gray0 },
+  SignColumn = { bg = c.gray0 },
 
-  FoldColumn = { fg = c.light.magenta, bg = c.black },
-  Folded = { fg = c.light.magenta, bg = c.gray3 },
-
-  Pmenu = { fg = c.gray4, bg = c.gray1 },
-  PmenuSel = { fg = c.white, bg = c.gray2 },
-  PmenuSbar = { bg = c.black },
-  PmenuThumb = { bg = c.gray3 },
-
-  SignColumn = { bg = c.black },
-
-  LineNr = { fg = c.gray3, bg = c.black },
-  CursorLineNr = { fg = c.gray4, bg = c.black },
-  VertSplit = { bg = "#2C2E3A" },
-
+  -- Vim builtin features
   ErrorMsg = { fg = c.dark.red },
   WarningMsg = { fg = c.dark.yellow },
-  Whitespace = { fg = c.light.magenta },
 
   DiffAdd = { fg = c.dark.green, bg = c.black },
   DiffChange = { fg = c.dark.yellow, bg = c.black },
   DiffDelete = { fg = c.dark.red, bg = c.black },
   DiffText = { fg = c.dark.blue, bg = c.black },
 
+  -- Status, bars and tabs
   TabLineFill = { bg = c.gray1 },
   TabLine = { bg = c.gray2, fg = c.foreground },
   TabLineSel = { bg = c.gray3, fg = c.black, gui = "bold,italic" },
   TabLineSelLabel = { bg = c.gray3, fg = c.foreground },
+
+  WinBar = { fg = c.black, bg = c.gray3 },
+  WinBarNC = { fg = c.gray4, bg = c.gray1 },
+
+  StatusLine = { fg = c.black, bg = c.gray3 },
+  StatusLineNC = { fg = c.gray4, bg = c.gray1 },
+
+  -- Vim ui
+  Title = { fg = c.cyan, gui = "bold" },
+  MoreMsg = { fg = c.light.green },
+  ModeMsg = { gui = "bold" },
+  Question = { fg = c.light.green },
+  MsgArea = {},
+  MsgSeparator = { bg = c.gray1 },
+  NonText = { fg = c.light.green },
+
+  -- Ungrouped
+  Directory = { fg = c.gray4 },
+  EndOfBuffer = { fg = c.gray0 },
+  MatchParen = { fg = c.black, bg = c.gray4 },
+  SpecialKey = { fg = c.dark.green, gui = "bold,italic" },
+  Whitespace = { fg = c.light.red },
 
   -- Language commons
   Comment = { fg = c.gray3, gui = "italic" },
@@ -73,6 +93,8 @@ local common = {
   Ignore = { fg = c.gray4 },
 
   Error = { fg = c.dark.red },
+
+  Todo = { fg = c.cyan, bg = c.gray1, gui = "bold" },
 }
 
 return common
