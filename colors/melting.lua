@@ -3,13 +3,13 @@ if not vim.go.termguicolors then
   return
 end
 
-vim.g.colors_name = "melting"
-vim.opt.background = "dark"
-
 vim.cmd("highlight clear")
 if vim.g.syntax_on then
   vim.cmd("syntax reset")
 end
+
+vim.g.colors_name = "melting"
+vim.opt.background = "dark"
 
 -- Resets all loaded melting packages
 for packagePath in pairs(package.loaded) do
