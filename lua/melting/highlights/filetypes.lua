@@ -1,29 +1,17 @@
 local c = require("melting.colors")
 
 local filetypes = {
-  -- Shell scripts
-  zshDeref = { fg = c.red },
-  zshSubst = { fg = c.dark.green },
-  zshSubstDelim = { fg = c.light.magenta },
-  zshVariableDef = { fg = c.cyan },
-
   -- Man
-  manReference = { fg = c.light.red },
-  manUnderline = { fg = c.light.red },
+  manHeader = { fg = c.light.magenta },
+  manSectionHeading = "manHeader",
+  manSubHeading = "manHeader",
 
-  manTitle = { fg = c.dark.yellow },
-  manBold = { fg = c.cyan },
+  manOptionDesc = { fg = c.cyan },
+  manReference = { fg = c.red },
 
-  manOptionDesc = { fg = c.light.magenta },
-  manSectionHeading = { fg = c.light.magenta },
-  manSubHeading = { fg = c.light.magenta },
-
-  -- Vim help
-  helpHyperTextEntry = { fg = c.light.red },
-  helpSectionDelim = { fg = c.light.magenta },
-
-  -- Vim
-  vimFunction = { fg = c.dark.green },
+  manUnderline = { fg = c.dark.magenta, gui = "bold" },
+  manBold = { gui = "bold" },
+  manItalic = { gui = "italic" },
 }
 
 return filetypes
