@@ -12,6 +12,8 @@ local colors = {
 
   red = "#D2516F",
   cyan = "#9BE1D0",
+  pink = "#E3B8EF",
+  magenta = "#9B89D1",
 
   hint = "#7AF0D3",
   warn = "#F6E22C",
@@ -20,15 +22,13 @@ local colors = {
   dark = {
     green = "#6AA28C",
     yellow = "#BFC08C",
-    blue = "#84A0C6",
-    magenta = "#9B89D1",
+    blue = "#94AAC7",
   },
 
   light = {
     green = "#88CEA2",
     yellow = "#E0E1B2",
-    blue = "#A5D4E4",
-    magenta = "#BFB2E6",
+    blue = "#9ED7EB",
   },
 }
 

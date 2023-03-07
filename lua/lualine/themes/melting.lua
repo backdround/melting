@@ -11,7 +11,7 @@ local colors = {
   gray4 = c.gray4,
 
   green = c.dark.green,
-  magenta = c.dark.magenta,
+  magenta = c.magenta,
   red = c.red,
   blue = c.dark.blue,
 }

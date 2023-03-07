@@ -91,10 +91,10 @@ local common = {
 
   Constant = { fg = c.light.yellow },
 
-  Identifier = { fg = c.light.blue },
-  Function = { fg = c.dark.magenta },
+  Identifier = { fg = c.dark.blue },
+  Function = { fg = c.magenta },
 
-  Statement = { fg = c.light.magenta },
+  Statement = { fg = c.pink },
   Operator = { fg = c.dark.yellow },
 
   PreProc = { fg = c.red },
@@ -102,6 +102,7 @@ local common = {
   Type = { fg = c.cyan, gui = "bold" },
 
   Special = { fg = c.dark.yellow },
+  SpecialChar = { fg = c.red },
   Delimiter = { fg = c.gray4 },
 
   Underlined = { fg = c.red },
@@ -110,7 +111,7 @@ local common = {
 
   Error = { fg = c.error },
 
-  Todo = { fg = c.cyan, bg = c.gray1, gui = "bold" },
+  Todo = { fg = c.pink, bg = c.black, gui = "bold" },
 }
 
 return common
