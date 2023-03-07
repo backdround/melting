@@ -28,6 +28,7 @@ local common = {
   FoldColumn = { fg = c.gray3, bg = c.gray0 },
 
   -- Window delimiters.
+  FloatBorder = { bg = c.background, fg = c.gray3 },
   WinSeparator = { bg = c.gray1, fg = c.foreground },
   LineNr = { fg = c.gray3, bg = c.gray0 },
   CursorLineNr = { fg = c.foreground, bg = c.gray0 },
