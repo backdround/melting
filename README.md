@@ -5,6 +5,9 @@ It's a neovim theme.
 - Neovim >= 0.5
 - True color support
 
+### Preview
+![2023-03-08_22-07](https://user-images.githubusercontent.com/17349169/223813830-badd904d-654a-4b98-8b07-e69158a8644e.png)
+
 ### Supported plugins
 - TreeSitter
 - Lualine
