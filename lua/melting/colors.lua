@@ -19,6 +19,8 @@ local colors = {
   warn = "#F6E22C",
   error = "#FE1048",
 
+  match = "#DB2970",
+
   dark = {
     green = "#6AA28C",
     yellow = "#BFC08C",

@@ -69,7 +69,7 @@ local common = {
   EndOfBuffer = { fg = c.gray0 },
   MatchParen = { fg = c.black, bg = c.gray4 },
   SpecialKey = { fg = c.dark.green, gui = "bold,italic" },
-  Whitespace = { fg = c.error },
+  Whitespace = { fg = c.match },
 
   -- Diagnostic
   DiagnosticError = { fg = c.error },

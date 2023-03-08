@@ -2,13 +2,13 @@ local c = require("melting.colors")
 
 local plugins = {
   -- Hop
-  HopNextKey = { fg = c.pink, gui = "bold" },
-  HopNextKey1 = { fg = c.cyan, gui = "bold" },
-  HopNextKey2 = { fg = c.gray3 },
+  HopNextKey = { fg = c.match, gui = "bold" },
+  HopNextKey1 = { fg = c.red, gui = "bold" },
+  HopNextKey2 = { fg = c.gray4 },
 
   HopUnmatched = { fg = c.gray2, gui = "bold" },
   HopCursor = "Cursor",
-  HopPreview = { fg = c.cyan, gui = "bold" },
+  HopPreview = { fg = c.match, gui = "bold" },
 
   -- Telescope
   TelescopeTitle = "Title",
@@ -18,7 +18,7 @@ local plugins = {
   TelescopePromptPrefix = { fg = c.cyan, bg = c.gray1, gui = "bold" },
   TelescopeSelectionCaret = "TelescopePromptPrefix",
   TelescopeSelection = { fg = c.white, bg = c.gray1 },
-  TelescopeMatching = { fg = c.error, gui = "bold" },
+  TelescopeMatching = { fg = c.match, gui = "bold" },
   TelescopeResultsNormal = { fg = c.gray4 },
 
   TelescopePreviewNormal = "Normal",
@@ -29,7 +29,7 @@ local plugins = {
   TelescopeResultsBorder = "FloatBorder",
 
   -- Cmp
-  CmpItemAbbrMatch = { fg = c.error },
+  CmpItemAbbrMatch = { fg = c.match, gui = "bold" },
   CmpItemAbbrMatchFuzzy = { fg = c.red },
 
   CmpItemAbbr = { fg = c.gray4 },
