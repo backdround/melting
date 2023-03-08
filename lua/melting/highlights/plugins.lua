@@ -28,6 +28,17 @@ local plugins = {
   TelescopePreviewBorder = "FloatBorder",
   TelescopeResultsBorder = "FloatBorder",
 
+  -- Cmp
+  CmpItemAbbrMatch = { fg = c.error },
+  CmpItemAbbrMatchFuzzy = { fg = c.red },
+
+  CmpItemAbbr = { fg = c.gray4 },
+  CmpItemAbbrDeprecated = { fg = c.gray4, gui = "strikethrough" },
+
+  CmpItemKind = { fg = c.pink },
+  CmpItemKindMethod = { fg = c.magenta },
+
+  CmpItemMenu = { fg = c.gray4 },
 }
 
 return plugins
