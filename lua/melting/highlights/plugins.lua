@@ -39,6 +39,14 @@ local plugins = {
   CmpItemKindMethod = { fg = c.magenta },
 
   CmpItemMenu = { fg = c.gray4 },
+
+	-- Lspconfig
+	LspInfoTitle = "Title",
+	LspInfoBorder = "FloatBorder",
+	LspInfoTip = { fg = c.light.green },
+
+	LspInfoList = { fg = c.match },
+	LspInfoFiletype = { fg = c.pink, gui = "bold" },
 }
 
 return plugins
