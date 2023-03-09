@@ -49,3 +49,13 @@ local highlights = require("melting.highlights")
 for group, settings in pairs(highlights) do
   makeHighlight(group, settings)
 end
+
+-- Gets user config
+local config = vim.g.meltingConfig
+
+-- Loads user highlights
+if config and config.highlights then
+	for group, settings in pairs(config.highlights) do
+		makeHighlight(group, settings)
+	end
+end

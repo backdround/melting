@@ -8,6 +8,20 @@ It's a neovim theme.
 ### Preview
 ![2023-03-08_22-07](https://user-images.githubusercontent.com/17349169/223813830-badd904d-654a-4b98-8b07-e69158a8644e.png)
 
+### Usage
+```lua
+-- Load theme
+require("melting").setup({})
+
+-- Load theme with custom highlights
+require("melting").setup({
+  highlights = {
+    UserHighlight1 = { fg = "#B4B7C5", bg = "#14171E", gui = "bold,italic" },
+    UserHighlight2 = "ErrorMsg",
+  },
+})
+```
+
 ### Supported plugins
 - TreeSitter
 - Lualine
@@ -19,9 +33,9 @@ It's a neovim theme.
 ### Lualine
 To use theme for lualine:
 ```lua
-require('lualine').setup {
+require("lualine").setup {
   options = {
-    theme = 'melting',
+    theme = "melting",
   },
 }
 ```
