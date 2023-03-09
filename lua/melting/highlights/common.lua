@@ -47,7 +47,6 @@ local common = {
   TabLineFill = { bg = c.gray1 },
   TabLine = { bg = c.gray2, fg = c.foreground },
   TabLineSel = { bg = c.gray3, fg = c.black, gui = "bold,italic" },
-  TabLineSelLabel = { bg = c.gray3, fg = c.foreground },
 
   WinBar = { fg = c.black, bg = c.gray3 },
   WinBarNC = { fg = c.gray4, bg = c.gray1 },
