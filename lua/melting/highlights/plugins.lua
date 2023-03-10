@@ -15,8 +15,8 @@ local plugins = {
   TelescopePromptNormal = { fg = c.white },
   TelescopePromptCounter = { fg = c.magenta, gui = "bold" },
 
-  TelescopePromptPrefix = { fg = c.cyan, bg = c.gray1, gui = "bold" },
-  TelescopeSelectionCaret = "TelescopePromptPrefix",
+  TelescopePromptPrefix = { fg = c.cyan, gui = "bold" },
+  TelescopeSelectionCaret = { fg = c.cyan, bg = c.gray1, gui = "bold" },
   TelescopeSelection = { fg = c.white, bg = c.gray1 },
   TelescopeMatching = { fg = c.match, gui = "bold" },
   TelescopeResultsNormal = { fg = c.gray4 },
