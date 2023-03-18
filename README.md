@@ -29,6 +29,7 @@ require("melting").setup({
 - Hop
 - Cmp
 - Lspconfig
+- Illuminate
 
 ### Lualine
 To use theme for lualine:

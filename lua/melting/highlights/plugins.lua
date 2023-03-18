@@ -47,6 +47,11 @@ local plugins = {
 
   LspInfoList = { fg = c.match },
   LspInfoFiletype = { fg = c.pink, gui = "bold" },
+
+  -- Illuminate
+  IlluminatedWordText = "LspReferenceText",
+  IlluminatedWordRead = "LspReferenceRead",
+  IlluminatedWordWrite = "LspReferenceWrite",
 }
 
 return plugins

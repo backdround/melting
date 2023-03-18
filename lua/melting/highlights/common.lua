@@ -86,14 +86,11 @@ local common = {
   DiagnosticSignInfo = { fg = c.hint, bg = c.gray0 },
   DiagnosticSignHint = { fg = c.hint, bg = c.gray0 },
 
+  -- TODO: LspCodeLens, LspCodeLensSeparator
   -- Lsp
-
-  -- TODO:
-  -- LspReferenceText
-  -- LspReferenceRead
-  -- LspReferenceWrite
-  -- LspCodeLens
-  -- LspCodeLensSeparator
+  LspReferenceText = { bg = c.gray1, gui = "underline", guisp = c.gray4 },
+  LspReferenceRead = "LspReferenceText",
+  LspReferenceWrite = "LspReferenceText",
 
   LspSignatureActiveParameter = { fg = c.cyan, bg = c.gray1, gui = "bold" },
 
