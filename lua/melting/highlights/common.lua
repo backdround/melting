@@ -69,6 +69,7 @@ local common = {
   MatchParen = { fg = c.black, bg = c.gray4 },
   SpecialKey = { fg = c.dark.green, gui = "bold,italic" },
   Whitespace = { fg = c.match },
+  Conceal = { fg = c.gray2 },
 
   -- Diagnostic
   DiagnosticError = { fg = c.error },
