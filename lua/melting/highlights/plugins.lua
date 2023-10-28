@@ -54,9 +54,9 @@ local plugins = {
   IlluminatedWordWrite = "LspReferenceWrite",
 
   -- Sj
-  SjFocusedLabel = { fg = c.match, bg = c.black, gui = "bold" },
-  SjLabel = { fg = c.red, gui = "bold" },
-  SjLimitReached = { fg = c.black, bg = c.cyan, gui = "bold" },
+  SjFocusedLabel = { fg = c.cyan, gui = "bold" },
+  SjLabel = { fg = c.match, gui = "bold" },
+  SjLimitReached = { fg = c.light.yellow, gui = "bold" },
   SjMatches = { fg = c.pink },
   SjNoMatches = "ErrorMsg",
   SjOverlay = { fg = c.gray2 },
