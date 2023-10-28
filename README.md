@@ -30,6 +30,7 @@ require("melting").setup({
 - Cmp
 - Lspconfig
 - Illuminate
+- Sj
 
 ### Lualine
 To use theme for lualine:

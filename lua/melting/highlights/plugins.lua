@@ -6,7 +6,7 @@ local plugins = {
   HopNextKey1 = { fg = c.red, gui = "bold" },
   HopNextKey2 = { fg = c.gray4 },
 
-  HopUnmatched = { fg = c.gray2, gui = "bold" },
+  HopUnmatched = { fg = c.gray2 },
   HopCursor = "Cursor",
   HopPreview = { fg = c.match, gui = "bold" },
 
@@ -52,6 +52,14 @@ local plugins = {
   IlluminatedWordText = "LspReferenceText",
   IlluminatedWordRead = "LspReferenceRead",
   IlluminatedWordWrite = "LspReferenceWrite",
+
+  -- Sj
+  SjFocusedLabel = { fg = c.match, bg = c.black, gui = "bold" },
+  SjLabel = { fg = c.red, gui = "bold" },
+  SjLimitReached = { fg = c.black, bg = c.cyan, gui = "bold" },
+  SjMatches = { fg = c.pink },
+  SjNoMatches = "ErrorMsg",
+  SjOverlay = { fg = c.gray2 },
 }
 
 return plugins
