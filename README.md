@@ -16,7 +16,8 @@ require("melting").setup({})
 -- Load theme with custom highlights
 require("melting").setup({
   highlights = {
-    UserHighlight1 = { fg = "#B4B7C5", bg = "#14171E", gui = "bold,italic" },
+    -- Use format from vim.api.nvim_set_hl options
+    UserHighlight1 = { fg = "#B4B7C5", bg = "#14171E", bold = true, italic = true },
     UserHighlight2 = "ErrorMsg",
   },
 })

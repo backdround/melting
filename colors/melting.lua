@@ -20,28 +20,13 @@ end
 
 -- Function that real applies highlight to group
 local function make_highlight(group, settings)
-  if type(settings) ~= "string" and type(settings) ~= "table" then
-    local error_template = "Expected string or table for %s, but got: %s"
+  if type(settings) ~= "table" then
+    local error_template = "Expected table for %s, but got: %s"
     error(string.format(error_template, group, type(settings)))
     return
   end
 
-  local command
-
-  -- Gets command string
-  if type(settings) == "string" then
-    command = string.format("highlight link %s %s", group, settings)
-  elseif type(settings) == "table" then
-    local cmd_template = "highlight %s guifg=%s guibg=%s gui=%s guisp=%s"
-    local fg = settings.fg or "none"
-    local bg = settings.bg or "none"
-    local gui = settings.gui or "none"
-    local guisp = settings.guisp or "none"
-
-    command = string.format(cmd_template, group, fg, bg, gui, guisp)
-  end
-
-  vim.api.nvim_command(command)
+  vim.api.nvim_set_hl(0, group, settings)
 end
 
 -- Loads all highlights

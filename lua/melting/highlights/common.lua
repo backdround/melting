@@ -13,13 +13,13 @@ local common = {
   CursorColumn = { bg = c.gray0 },
 
   -- Search and replace
-  Search = { fg = c.black, bg = c.dark.blue, gui = "bold" },
-  IncSearch = { fg = c.black, bg = c.light.yellow, gui = "bold" },
-  Substitute = { fg = c.black, bg = c.dark.blue, gui = "bold" },
+  Search = { fg = c.black, bg = c.dark.blue, bold = true },
+  IncSearch = { fg = c.black, bg = c.light.yellow, bold = true },
+  Substitute = { fg = c.black, bg = c.dark.blue, bold = true },
 
   -- Completion
   Pmenu = { fg = c.foreground, bg = c.gray0 },
-  PmenuSel = { fg = c.black, bg = c.gray3, gui = "bold" },
+  PmenuSel = { fg = c.black, bg = c.gray3, bold = true },
   PmenuSbar = { bg = c.gray1 },
   PmenuThumb = { bg = c.gray4 },
 
@@ -46,7 +46,7 @@ local common = {
   -- Status, bars and tabs
   TabLineFill = { bg = c.gray1 },
   TabLine = { bg = c.gray2, fg = c.foreground },
-  TabLineSel = { bg = c.gray3, fg = c.black, gui = "bold,italic" },
+  TabLineSel = { bg = c.gray3, fg = c.black, bold = true, italic = true },
 
   WinBar = { fg = c.black, bg = c.gray3 },
   WinBarNC = { fg = c.gray4, bg = c.gray1 },
@@ -55,9 +55,9 @@ local common = {
   StatusLineNC = { fg = c.gray4, bg = c.gray1 },
 
   -- Vim ui
-  Title = { fg = c.cyan, gui = "bold" },
+  Title = { fg = c.cyan, bold = true },
   MoreMsg = { fg = c.light.green },
-  ModeMsg = { gui = "bold" },
+  ModeMsg = { bold = true },
   Question = { fg = c.light.green },
   MsgArea = {},
   MsgSeparator = { bg = c.gray1 },
@@ -67,7 +67,7 @@ local common = {
   Directory = { fg = c.gray4 },
   EndOfBuffer = { fg = c.gray0 },
   MatchParen = { fg = c.black, bg = c.gray4 },
-  SpecialKey = { fg = c.dark.green, gui = "bold,italic" },
+  SpecialKey = { fg = c.dark.green, bold = true, italic = true },
   Whitespace = { fg = c.match },
   Conceal = { fg = c.gray2 },
 
@@ -77,10 +77,10 @@ local common = {
   DiagnosticInfo = { fg = c.hint },
   DiagnosticHint = { fg = c.hint },
 
-  DiagnosticUnderlineError = { gui = "underline", guisp = c.error },
-  DiagnosticUnderlineWarn = { gui = "underline", guisp = c.warn },
-  DiagnosticUnderlineInfo = { gui = "underline", guisp = c.hint },
-  DiagnosticUnderlineHint = { gui = "underline", guisp = c.hint },
+  DiagnosticUnderlineError = { underline = true, sp = c.error },
+  DiagnosticUnderlineWarn = { underline = true, sp = c.warn },
+  DiagnosticUnderlineInfo = { underline = true, sp = c.hint },
+  DiagnosticUnderlineHint = { underline = true, sp = c.hint },
 
   DiagnosticSignError = { fg = c.error, bg = c.gray0 },
   DiagnosticSignWarn = { fg = c.warn, bg = c.gray0 },
@@ -89,14 +89,14 @@ local common = {
 
   -- TODO: LspCodeLens, LspCodeLensSeparator
   -- Lsp
-  LspReferenceText = { bg = c.gray1, gui = "underline", guisp = c.gray4 },
-  LspReferenceRead = "LspReferenceText",
-  LspReferenceWrite = "LspReferenceText",
+  LspReferenceText = { bg = c.gray1, underline = true, sp = c.gray4 },
+  LspReferenceRead = { link = "LspReferenceText" },
+  LspReferenceWrite = { link = "LspReferenceText" },
 
-  LspSignatureActiveParameter = { fg = c.cyan, bg = c.gray1, gui = "bold" },
+  LspSignatureActiveParameter = { fg = c.cyan, bg = c.gray1, bold = true },
 
   -- Language commons
-  Comment = { fg = c.gray3, gui = "italic" },
+  Comment = { fg = c.gray3, italic = true },
 
   Constant = { fg = c.light.yellow },
 
@@ -108,7 +108,7 @@ local common = {
 
   PreProc = { fg = c.red },
 
-  Type = { fg = c.cyan, gui = "bold" },
+  Type = { fg = c.cyan, bold = true },
 
   Special = { fg = c.dark.yellow },
   SpecialChar = { fg = c.red },
@@ -120,7 +120,7 @@ local common = {
 
   Error = { fg = c.error },
 
-  Todo = { fg = c.pink, bg = c.black, gui = "bold" },
+  Todo = { fg = c.pink, bg = c.black, bold = true },
 }
 
 return common
