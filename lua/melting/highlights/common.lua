@@ -24,7 +24,7 @@ local common = {
   PmenuThumb = { bg = c.gray4 },
 
   -- Folds
-  Folded = { fg = c.dark.yellow, bg = c.gray1 },
+  Folded = { fg = c.cyan, bg = c.gray0 },
   FoldColumn = { fg = c.gray3, bg = c.gray0 },
 
   -- Window delimiters.
