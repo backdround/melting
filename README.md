@@ -32,6 +32,7 @@ require("melting").setup({
 - Lspconfig
 - Illuminate
 - Sj
+- Nvim-surround
 
 ### Lualine
 To use theme for lualine:

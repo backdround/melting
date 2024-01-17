@@ -60,6 +60,9 @@ local plugins = {
   SjMatches = { fg = c.pink },
   SjNoMatches = { link = "ErrorMsg" },
   SjOverlay = { fg = c.gray2 },
+
+  -- Nvim-surround
+  NvimSurroundHighlight = { fg = c.match, bg = c.gray2 }
 }
 
 return plugins
