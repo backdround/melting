@@ -28,8 +28,8 @@ local colors = {
   },
 
   light = {
-    green = "#88CEA2",
-    yellow = "#E0E1B2",
+    green = "#AFE4C9",
+    yellow = "#F3F4BE",
     blue = "#9ED7EB",
   },
 }

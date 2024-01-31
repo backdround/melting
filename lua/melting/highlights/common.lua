@@ -98,7 +98,8 @@ local common = {
   -- Language commons
   Comment = { fg = c.gray3, italic = true },
 
-  Constant = { fg = c.light.yellow },
+  Constant = { fg = c.light.green },
+  String = { fg = c.light.yellow },
 
   Identifier = { fg = c.dark.blue },
   Function = { fg = c.magenta },
