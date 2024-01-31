@@ -14,7 +14,8 @@ local common = {
 
   -- Search and replace
   Search = { fg = c.black, bg = c.dark.blue, bold = true },
-  IncSearch = { fg = c.black, bg = c.light.yellow, bold = true },
+  CurSearch = { fg = c.black, bg = c.pink, bold = true },
+  IncSearch = { link = "CurSearch" },
   Substitute = { fg = c.black, bg = c.dark.blue, bold = true },
 
   -- Completion
